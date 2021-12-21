@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>script HomeWork</title>
+    <style>
+      #firstName {
+        color: red;
+        font-size: 2em;
+      }
+      #lastName {
+        color: green;
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <p><span id="firstName"></span> <span id="lastName"></span></p>
+    <!-- <p id="firstName"></p> -->
+    <!-- <p id="lastName"></p> -->
+    <script>
+      let firstNm = prompt("Please enter first name", "");
+      if (firstNm != null) {
+        document.getElementById("firstName").innerHTML = firstNm;
+      }
+
+      let lastNm = prompt("Please enter last name", "");
+      if (lastNm != null) {
+        document.getElementById("lastName").innerHTML = lastNm;
+      }
+      alert("Hello " + firstNm + " " + lastNm);
+    </script>
+  </body>
+</html>
