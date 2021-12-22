@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Properties 2</title>
+  </head>
+  <body>
+    <!-- <button onclick="red()">RED</button>
+    <button onclick="green()">GREEN</button>
+    <button onclick="blue()">BLUE</button> -->
+
+    <button onclick="change_BackGround_Color('red')">RED</button>
+    <button onclick="change_BackGround_Color('green')">GREEN</button>
+    <button onclick="change_BackGround_Color('blue')">BLUE</button>
+
+    <button onclick="calc(5)">Calc</button>
+
+    <script>
+      function change_BackGround_Color(backGround_Color) {
+        document.bgColor = backGround_Color;
+      }
+      function calc(num) {
+        console.log(num * num);
+      }
+      // function green() {
+      //   document.bgColor = "green";
+      // }
+      // function blue() {
+      //   document.bgColor = "blue";
+      // }
+      // function red() {
+      //   document.bgColor = "red";
+      // }
+    </script>
+  </body>
+</html>
