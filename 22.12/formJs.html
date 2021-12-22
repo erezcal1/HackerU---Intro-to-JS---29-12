@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Js</title>
+  </head>
+  <body>
+    <!-- form>label+input*2 -->
+    <form name="for_Me">
+      <label for="">Name: </label>
+      <input type="text" name="user" />
+      <br />
+      <input type="button" value="click" onclick="the_User()" />
+    </form>
+
+    <script>
+      function the_User() {
+        //window.document.form.text.user
+        var user_Name = document.for_Me.user.value;
+        alert("Hello " + user_Name);
+      }
+    </script>
+  </body>
+</html>
