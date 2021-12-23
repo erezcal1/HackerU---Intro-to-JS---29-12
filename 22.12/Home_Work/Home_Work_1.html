@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H-W 1</title>
+  </head>
+  <body>
+    <form name="Form_Me">
+      <label for="">Whats the color you want?</label>
+      <input type="text" name="user" />
+      <input type="button" value="click" onclick="change_BG_Color()" />
+    </form>
+
+    <script>
+      function change_BG_Color() {
+        var user_BG_Color = document.Form_Me.user.value;
+        document.bgColor = user_BG_Color;
+      }
+    </script>
+  </body>
+</html>
