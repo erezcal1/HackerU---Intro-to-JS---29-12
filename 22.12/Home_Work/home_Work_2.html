@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>H-W 2</title>
-  </head>
-  <body>
-    <form action="">
-      <label for="">Where do you want to go?</label>
-      <br />
-      <input
-        type="button"
-        value="google"
-        onclick="go_To_WebSite('https://www.google.co.il/')"
-      />
-      <br />
-      <input
-        type="button"
-        value="YouTube"
-        onclick="go_To_WebSite('https://www.youtube.com/')"
-      />
-      <br />
-      <input
-        type="button"
-        value="FaceBook"
-        onclick="go_To_WebSite('https://www.facebook.com/')"
-      />
-    </form>
-    <script>
-      function go_To_WebSite(webSite) {
-        document.location.href = webSite;
-      }
-    </script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H-W 2</title>
+</head>
+
+<body>
+  <form>
+    <label for="">Where do you want to go?</label>
+    <br>
+    <input type="button" value="google" onclick="go_To_WebSite('https://www.google.co.il/')" />
+    <br>
+    <input type="button" value="YouTube" onclick="go_To_WebSite('https://www.youtube.com/')" />
+    <br>
+    <input type="button" value="FaceBook" onclick="go_To_WebSite('https://www.facebook.com/')" />
+  </form>
+  <script>
+    function go_To_WebSite(webSite) {
+      document.location.href = webSite;
+      // var where_To = webSite;
+      // window.open("where_To", "_blank");
+    }
+  </script>
+</body>
+
 </html>
