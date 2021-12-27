@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+</head>
+
+<body>
+  <form name="for_Me">
+    <input type="text" name="clock">
+  </form>
+
+  <script>
+    function run_Time() {
+      var watch = document.for_Me.clock;
+      var the_Time = new Date();
+      var hr = the_Time.getHours();
+      var mn = the_Time.getMinutes();
+      var sc = the_Time.getSeconds();
+      var time = hr + ":" + mn + ":" + sc;
+      watch.value = time;
+      setTimeout(run_Time, 1000);
+    }
+    run_Time();
+  </script>
+</body>
+
+</html>

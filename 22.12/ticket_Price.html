@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ticket Price</title>
-  </head>
-  <body>
-    <form name="for_Me">
-      <label for="">Enter Your Age: </label>
-      <input type="text" name="user_Age" />
-      <br />
-      <input type="button" value="check price" />
-    </form>
 
-    <script></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Price</title>
+</head>
+
+<body>
+  <form name="for_Me">
+    <label for="">Enter Your Age: </label>
+    <input type="text" name="user_Age" />
+    <br />
+    <input type="button" value="check price" onclick="check()" />
+  </form>
+
+  <script>
+    function check() {
+      var user_Age = document.for_Me.user_Age.value;
+      if (user_Age < 12) {
+        alert("The price is 70 nis")
+      } else if (user_Age >= 65) {
+        alert("The price is 50 nis")
+      } else {
+        alert("The price is 150 nis")
+      }
+    }
+  </script>
+</body>
+
 </html>

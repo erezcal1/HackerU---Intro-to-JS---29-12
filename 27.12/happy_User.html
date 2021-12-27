@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy User</title>
+</head>
+
+<body>
+  <form name="for_Me">
+    <label for="">How many times to write happy</label>
+    <input type="text" name="user">
+    <br>
+    <input type="button" value="press me" onclick="happy_User()">
+  </form>
+
+  <script>
+    function happy_User() {
+      //The user decides how many times he wants to write "Happy"
+      var user_value = document.for_Me.user.value;
+      for (var x = 0; x < user_value; x++) {
+        document.write((x + 1) + " Happy <br>")
+      }
+    }
+  </script>
+</body>
+
+</html>

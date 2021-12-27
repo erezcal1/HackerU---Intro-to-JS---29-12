@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css + Flex</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    section {
+      width: 800px;
+      height: 400px;
+      background-color: #ccc;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .item {
+      text-align: center;
+      color: #fff;
+      flex-basis: 100px;
+    }
+
+    .items1 {
+      background-color: red;
+      flex-grow: 1;
+      order: 4;
+    }
+
+    .items2 {
+      background-color: green;
+      flex-grow: 1;
+      order: 2;
+    }
+
+    .items3 {
+      background-color: blue;
+      flex-grow: 1;
+      order: 1;
+    }
+
+    .items4 {
+      background-color: orange;
+      flex-grow: 1;
+      order: 3;
+    }
+
+    @media (max-width: 550px) {
+      section {
+        flex-direction: column;
+        width: 100vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="item items1">items 1</div>
+    <div class="item items2">items 2</div>
+    <div class="item items3">items 3</div>
+    <div class="item items4">items 4</div>
+  </section>
+</body>
+
+</html>
