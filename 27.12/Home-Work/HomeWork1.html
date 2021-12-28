@@ -1,0 +1,42 @@
+<!-- This program  find if a person can enter a movie.
+He can enter if he is older then 16 or have a parent-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H - W 2</title>
+  <style>
+    body {
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="for_Me">
+    <label for="">Enter your age:</label>
+    <input type="text" name="user">
+    <br>
+    <label for="">Do you have a parent?</label>
+    <input type="checkbox" name="parent" id="">
+    <br>
+    <input type="button" value="Can You Enter?" onclick="can_You_Enter()">
+  </form>
+  <script>
+    function can_You_Enter() {
+      var user_value = document.for_Me.user.value;
+      var parent_value = document.for_Me.parent.checked;
+      if (user_value.length != 0 && (user_value > 16 || parent_value == true)) {
+        document.write("<p style='font-size: 2rem;'>You can enter!</p>");
+      } else {
+        document.write("<p style='font-size: 2rem;'>You can't enter!</p>");
+      }
+    }
+  </script>
+</body>
+
+</html>

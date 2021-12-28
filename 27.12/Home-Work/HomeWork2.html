@@ -1,0 +1,76 @@
+<!-- This program is a 12 hour clock -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H - W 2</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=M+PLUS+1+Code&family=Montserrat:wght@300&family=Oswald&display=swap');
+
+    input[type="text"] {
+      font-family: 'Comforter Brush', cursive;
+
+      font-family: 'M PLUS 1 Code', sans-serif;
+
+      font-family: 'Montserrat', sans-serif;
+
+      font-family: 'Oswald', sans-serif;
+
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      width: 100%;
+      font-size: 3rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form name="for_Me">
+      <input type="text" name="clock">
+    </form>
+  </div>
+
+  <script>
+    function run_Time() {
+      var watch = document.for_Me.clock;
+      var the_Time = new Date();
+      var hr = the_Time.getHours();
+      var mn = the_Time.getMinutes();
+      var sc = the_Time.getSeconds();
+      if (hr < 10) {
+        hr = "0" + hr;
+      }
+      if (mn < 10) {
+        mn = "0" + mn;
+      }
+      if (sc < 10) {
+        sc = "0" + sc;
+      }
+      if (hr >= 12) {
+        hr = hr - 12;
+        var time = hr + ":" + mn + ":" + sc + " PM";
+      } else {
+        var time = hr + ":" + mn + ":" + sc + " AM";
+      }
+      watch.value = time;
+      setTimeout(run_Time, 1000);
+    }
+    run_Time();
+  </script>
+</body>
+
+</html>

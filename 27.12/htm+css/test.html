@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Admission</title>
+</head>
+
+<body>
+  <!-- form>label+input+br+input:button -->
+  <form name="forme">
+    <label for="">Enter Your age:</label>
+    <input type="text" name="userAge">
+    <br>
+    <input type="checkbox" name="parent check" id="checkbox">
+    <label for="parent check">Parent Present</label>
+    <br>
+    <input type="button" value="Check Admission" onclick="check()">
+  </form>
+
+  <script>
+    // add a form with a checkbox
+    // 16 years old can enter the movie 
+    // 16 and under with parent approval can enter
+    // all other cases Alert( GO HOME !)
+
+    // what to do if no age entered **
+
+    function check() {
+      var age = document.forme.userAge.value;
+      if (age.length != 0) {
+        if ((document.getElementById("checkbox").checked) == true) {
+          alert("OK to Enter");
+        } else if (age < 16) {
+          alert("GO HOME");
+        } else {
+          alert("OK to Enter");
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
