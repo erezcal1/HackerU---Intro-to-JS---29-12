@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch</title>
+</head>
+
+<body>
+  <form name="for_Me">
+    <label for="">Enter Password</label>
+    <input type="text" name="user_Pass">
+    <br>
+    <input type="button" value="Enter Site" onclick="check()">
+  </form>
+
+  <script>
+    //admin - 1234 / powerUser - 2345 / user - 3456
+    function check() {
+      var password = document.for_Me.user_Pass.value;
+      switch (password) {
+        case "1234":
+          document.location = "http://www.google.com";
+          break;
+        case "2345":
+          document.location = "http://www.facebook.com";
+          break;
+        case "3456":
+          document.location = "http://www.youtube.com";
+          break;
+
+        default:
+          alert("Wrong Password");
+          break;
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!-- This program prints to the document the special food for the day
+     according to what day it is on the week -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H - W - 1</title>
+</head>
+
+<body>
+  <script>
+    var time = new Date();
+    var day = time.getDay();
+    document.write(day);
+
+    switch (day) {
+      case 0:
+        document.write("<p>The special is pie</p>");
+        break;
+      case 1:
+        document.write("<p>The special is cake</p>");
+        break;
+      case 2:
+        document.write("<p>The special is pizza</p>");
+        break;
+      case 3:
+        document.write("<p>The special is hamburger</p>");
+        break;
+      case 4:
+        document.write("<p>The special is sushi</p>");
+        break;
+      case 5:
+        document.write("<p>The special is cornflakes</p>");
+        break;
+      case 6:
+        document.write("<p>The special is soup</p>");
+        break;
+
+      default:
+        document.write("<p>It's not a day</p>");
+        break;
+    }
+  </script>
+</body>
+
+</html>
