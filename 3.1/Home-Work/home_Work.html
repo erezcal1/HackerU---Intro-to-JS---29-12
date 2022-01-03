@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Work</title>
+</head>
+
+<body>
+  <form action="">
+    <label for="">Enter The Password</label>
+    <input type="text" id="pass">
+    <br>
+    <input type="button" value="Click me" id="click">
+  </form>
+  <section id="content"></section>
+
+  <script>
+    let content = document.getElementById('content');
+    document.getElementById('click').addEventListener('click', go);
+    let password = ["123", "456", "789", "abc"];
+    let counter = 0;
+
+    function go() {
+      let pass = document.getElementById('pass');
+      let index = false;
+
+      for (let i = 0; i < password.length; i++) {
+        if (pass.value == password[i]) {
+          index = true;
+          break;
+        }
+      }
+
+      if (index) {
+        document.location = "https://www.google.co.il/";
+      } else if (counter >= 5) {
+        document.getElementById('click').disabled = true;
+      } else {
+        content.innerHTML += counter;
+        counter += 1;
+      }
+    }
+  </script>
+</body>
+
+</html>

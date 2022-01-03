@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Write Array</title>
+</head>
+
+<body>
+  <script>
+    //Array Method 1
+    let students = new Array(5);
+    students[0] = "Avi";
+    students[1] = "Moshe";
+    students[2] = "Zipi";
+    students[3] = "Shula";
+    students[4] = "Yona";
+
+    //Array Method 2
+    let students2 = new Array("Avi", "Moshe", "Zipi", "Shula", "Yona");
+
+    //Array Method 3
+    let students3 = ["Avi", "Moshe", "Zipi", "Shula", "Yona"];
+
+    //Array can be of any type (string, number, boolean, object, function)
+    let values = [100, true, "Hello"];
+
+    for (let i = 0; i < students.length; i++) {
+      console.log(students[i]);
+    }
+  </script>
+</body>
+
+</html>
