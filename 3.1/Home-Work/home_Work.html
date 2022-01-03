@@ -39,7 +39,7 @@
       } else if (counter >= 5) {
         document.getElementById('click').disabled = true;
       } else {
-        content.innerHTML += counter;
+        alert('Wrong Password you have ' + (4 - counter) + ' more chances');
         counter += 1;
       }
     }
