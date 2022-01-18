@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods 2</title>
+</head>
+
+<body>
+  <script>
+    //to string
+    let fruits = ["banana", "orange", "apple", "grapes", "mango", "strawberry"];
+    let i = fruits.toString();
+    console.log(i);
+
+    //join
+    let fruits2 = ["banana", "orange", "apple", "grapes", "mango", "strawberry"];
+    let i2 = fruits2.join();
+    console.log(i2);
+
+    let fruits3 = ["banana", "orange", "apple", "grapes", "mango", "strawberry"];
+    let i3 = fruits3.join(" / ");
+    console.log(i3);
+
+    //sort
+    let fruits4 = ["banana", "orange", "apple", "grapes", "mango", "strawberry"];
+    fruits4.sort();
+    console.log(fruits4);
+
+    //reverse
+    let fruits5 = ["banana", "orange", "apple", "grapes", "mango", "strawberry"];
+    fruits5.reverse();
+    console.log(fruits5);
+
+    //sort on numbers array
+    let numbers = [5, 22, 3, 110, 100, 250, 30];
+    numbers.sort();
+    console.log(numbers);
+
+    //sort on numbers array
+    let numbers2 = [5, 22, 3, 110, 100, 250, 30];
+    numbers2.sort(function (a, b) {
+      return a - b;
+    });
+    console.log(numbers2);
+  </script>
+</body>
+
+</html>

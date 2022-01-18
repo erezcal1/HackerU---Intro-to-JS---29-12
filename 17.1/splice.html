@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splice</title>
+</head>
+
+<body>
+  <script>
+    //At position 2 add 2 items to the array
+    let fruits = ["Melon", "Kiwi", "Apple", "Orange"];
+    console.log(fruits);
+
+    fruits.splice(2, 0, "Lemon", "Watermelon");
+    console.log(fruits);
+
+    //At position 2 add1 item and remove 1 item
+    let fruits2 = ["Melon", "Kiwi", "Apple", "Orange"];
+    fruits2.splice(2, 1, "watermelon");
+    console.log(fruits2);
+
+    //At position 2 remove 2 items
+    let fruits3 = ["Melon", "Kiwi", "Apple", "Orange"];
+    fruits3.splice(2, 2);
+    console.log(fruits3);
+  </script>
+</body>
+
+</html>

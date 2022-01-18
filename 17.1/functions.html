@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+
+<body>
+  <button id="btn">Click</button>
+  <script>
+    // A function with no parameter and no returning value
+    function go_2() {
+      console.log("Welcome to the Jungle");
+    }
+    go_2();
+
+    // A function with no parameter with returning value
+    function go_3() {
+      return "Welcome to the Jungle";
+    }
+    console.log(go_3());
+
+    // A function with parameter and no returning value
+    function go_4(name) {
+      console.log("Welcome to the Jungle " + name);
+    }
+    go_4("John");
+
+    // A function with parameter and returning value
+    function go_5(name) {
+      return "Welcome to the Jungle " + name;
+    }
+    console.log(go_5("John"));
+
+    //function expression
+    document.getElementById('btn').addEventListener('click', function () {
+      console.log("Who let the dogs out?");
+    });
+  </script>
+</body>
+
+</html>

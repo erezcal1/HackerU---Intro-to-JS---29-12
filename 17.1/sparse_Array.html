@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparse Array</title>
+</head>
+
+<body>
+  <script>
+    let grades = [97, 32, 65, , 100, 88, 95, 60, 78];
+    let sum = 0,
+      undefined_Count = 0;
+    for (let i = 0; i < grades.length; i++) {
+      if (grades[i] != undefined) {
+        sum += grades[i];
+      } else {
+        undefined_Count++;
+        continue;
+      }
+    }
+    let avg = sum / (grades.length - undefined_Count);
+    console.log(avg);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods</title>
+</head>
+
+<body>
+  <script>
+    let arr = [];
+    arr[0] = 100;
+    arr[1] = 50;
+
+    //push
+    arr.push(85);
+    arr.push(25, 35);
+
+    //unshift
+    arr.unshift(112);
+
+
+    //pop
+    let pop = arr.pop();
+    console.log(pop);
+
+    //shift
+    let shift = arr.shift();
+    console.log(shift);
+
+    console.log(arr);
+
+    //spars array - array that contains empty values
+    let arr2 = [1, 2];
+    arr2[3] = 3;
+    console.log(arr2);
+  </script>
+</body>
+
+</html>
