@@ -18,8 +18,7 @@
       i = 0;
     document.getElementById('button_To_Arr').addEventListener('click', function () {
       let text_To_Arr = document.getElementById("val_To_Arr");
-      arr[i] = text_To_Arr.value;
-      i++;
+      arr.push(text_To_Arr.value);
       console.log(arr);
     });
   </script>
