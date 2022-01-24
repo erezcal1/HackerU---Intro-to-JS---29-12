@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Function</title>
+</head>
+
+<body>
+  <!-- Arrow Function is a new es6 way for creating function expression -->
+
+  <script>
+    //ES5 Function Expression
+    let sum = function (num1, num2) {
+      return num1 + num2;
+    }
+    console.log(sum(2, 3));
+
+    //ES6 Arrow Function 1
+    //2 parameters
+    let sum1 = (num1, num2) => num1 + num2;
+    console.log(sum1(2, 3));
+
+    //ES6 Arrow Function 2
+    //1 parameter
+    let func = num => num * num;
+    console.log(func(10));
+
+    //ES6 Arrow Function 3
+    //no parameter
+    let func1 = () => 5;
+    console.log(func1());
+
+    //ES6 Arrow Function 4
+    //tip calculator
+    let tip = (num, percent) => {
+      percent = percent / 100;
+      return num * percent;
+    }
+    console.log(tip(450, 12));
+  </script>
+</body>
+
+</html>

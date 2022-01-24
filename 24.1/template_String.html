@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template String</title>
+</head>
+
+<body>
+  <script>
+    //Template String
+    const u_name = "John";
+    const u_age = "22";
+    const u_job = "Fullstack Developer";
+    const u_city = "New Orleans";
+    let html_str;
+
+    html_str = "<ul><li>Name: " + u_name + "</li><li>Age: " + u_age + "</li><li>Job: " + u_job + "</li><li>City: " +
+      u_city + "</li></ul>";
+
+    html_str =
+      "<ul>" +
+      "<li>Name: " + u_name + "</li>" +
+      "<li>Age: " + u_age + "</li>" +
+      "<li>Job: " + u_job + "</li>" +
+      "<li>City: " + u_city + "</li>" +
+      "</ul>";
+
+    function hello() {
+      return "Hello World";
+    }
+
+    //ES6 Template String
+    html_str = `
+    <ul>
+      <li>Name: ${u_name}</li>
+      <li>Age: ${u_age}</li>
+      <li>Job: ${u_job}</li>
+      <li>City: ${u_city}</li>
+      <li>${2+2}</li>
+      <li>${hello()}</li>
+      <li>${u_age >30 ? "over 30" : "under 30"}</li>
+    </ul>`;
+
+    document.body.innerHTML = html_str;
+  </script>
+</body>
+
+</html>

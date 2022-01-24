@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Level 2-2</title>
+</head>
+
+<body>
+  <img src="horse1.jpg" alt="horse"><br>
+  <a href="#">Walla</a><br>
+  <a href="#">Ynet</a>
+
+  <ul>
+    <li class="item">item number 01</li>
+    <li class="item">item number 02</li>
+    <li class="item">item number 03</li>
+    <li class="item">item number 04</li>
+    <li class="item">item number 05</li>
+    <li class="item">item number 06</li>
+    <li class="item">item number 07</li>
+    <li class="item">item number 08</li>
+    <li class="item">item number 09</li>
+    <li class="item">item number 10</li>
+  </ul>
+  <a href="#">google</a><br>
+  <a href="#">Youtube</a><br>
+  <a href="#">Yahoo</a><br>
+  <a href="#">Facebook</a><br>
+
+  <script>
+    const item = document.getElementsByClassName('item'); //html collection
+    console.log(item);
+    console.log(item[0]);
+    item[0].style.backgroundColor = 'gold';
+    item[3].textContent = 'Who let the dogs out';
+
+    const links = document.getElementsByTagName('a');
+    console.log(links);
+    console.log(links[1]);
+
+    links[5].href = 'https://www.facebook.com';
+    const images = document.images;
+    images[0].src = "horse2.jpg";
+    images[0].alt = "horse2";
+  </script>
+</body>
+
+</html>

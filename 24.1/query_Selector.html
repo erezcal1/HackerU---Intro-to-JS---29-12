@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Query Selector</title>
+</head>
+
+<body>
+  <div>
+    look at the moon Amanda!
+  </div>
+  <section class="text">
+    This is a Section
+  </section>
+  <aside id="box">
+    A side word for me
+  </aside>
+
+  <img src="horse1.jpg" alt="horse1">
+  <img src="horse2.jpg" alt="horse2">
+
+  <script>
+    // One tag
+    const div = document.querySelector('div');
+    div.textContent = "some new text...";
+    console.log(div);
+
+    // class
+    const text = document.querySelector('.text');
+    text.style.color = 'tomato';
+
+    // id
+    const box = document.querySelector('#box');
+    box.style.fontSize = "2rem";
+
+    //attribute selector
+    const image = document.querySelector('img[alt="horse2"]');
+    image.style.border = "5px dashed red";
+  </script>
+</body>
+
+</html>
