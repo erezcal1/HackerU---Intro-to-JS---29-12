@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0.75em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4CAF50;
+}
+
+p:first-of-type {
+  font-size: 13rem;
+}
+
+p:nth-child(2) {
+  font-size: 8rem;
+}
+
+p:nth-child(3) {
+  margin: 0;
+  font-size: 7rem;
+}

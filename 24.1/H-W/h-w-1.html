@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Element HomeWork</title>
+  <style>
+    #btn_Input {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    #btn_Reset {
+      background-color: #070808;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="" id="form_all">
+    <button type="button" id="btn_Input" onclick="newFunction()">Click Me</button>
+    <button type="submit" id="btn_Reset">Reset</button>
+  </form>
+  <script>
+    // //Create Element
+    // const btn = document.querySelector("#btn_Input");
+    // btn.addEventListener("click", function () {
+    //   const input = document.createElement("input");
+    //   input.type = "button";
+    //   input.value = "Click Me";
+    //   input.id = "btn_Input";
+    //   const form_all = document.querySelector("form");
+    //   form_all.appendChild(input);
+    // });
+
+    //Create Element
+    // const btn_Input = document.querySelector("#btn_Input");
+    // btn_Input.addEventListener("click", () => {
+    //   const input = document.createElement("button");
+    //   input.type = "button";
+    //   input.innerHTML = "Click Me";
+    //   input.id = "btn_Input";
+    //   const form_all = document.querySelector("form");
+    //   form_all.appendChild(input);
+    // });
+
+    //Create Element
+    newFunction = () => {
+      const input = document.createElement("button");
+      input.type = "button";
+      input.textContent = "Click Me";
+      input.id = "btn_Input";
+      input.onclick = newFunction;
+      const form_all = document.querySelector("form");
+      form_all.appendChild(input);
+    };
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>template String HomeWork</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <script>
+    function run_Time() {
+      let html_Date;
+      let today = new Date();
+      let hr = today.getHours();
+      let mn = today.getMinutes();
+      let sc = today.getSeconds();
+      am_pm(hr);
+      am_pm(mn);
+      am_pm(sc);
+      html_Date = `
+        <p>
+          <span>${today.getMonth()+1} /</span>
+          <span>${today.getDate()+1} / </span>
+          <span>${today.getFullYear()}</span>
+        </p>
+        <p>
+          <span>${hr}:</span>
+          <span>${mn}:</span>
+          <span>${sc}</span>
+        </p>
+        `;
+      if (hr >= 12) {
+        html_Date += `<p>PM</p>`;
+      } else {
+        html_Date += `<p>AM</p>`;
+      }
+      document.body.innerHTML = html_Date;
+      setTimeout(run_Time, 1000);
+    }
+    run_Time();
+
+    function am_pm(time) {
+      if (time < 10) {
+        time = "0" + time;
+      };
+    }
+  </script>
+</body>
+
+</html>
