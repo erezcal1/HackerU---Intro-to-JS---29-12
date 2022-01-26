@@ -15,11 +15,11 @@
     //   console.log(colors[i]);
     // }
     //Function Expression
-    colors.forEach(function (color) {
-      document.body.innerHTML += `${color} <br>`;
+    colors.forEach(function (color, index, arr) {
+      document.body.innerHTML += `the ${index+1} color is: ${color}. The array is: ${arr} <br>`;
     });
     // Arrow Function
-    colors.forEach(color => console.log(color));
+    colors.forEach((color, index, arr) => console.log(color, index + 1, arr));
   </script>
 
 </body>
