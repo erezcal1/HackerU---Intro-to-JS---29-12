@@ -1,0 +1,54 @@
+:root {
+  --bgc: deepskyblue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+section:target {
+  background-color: var(--bgc);
+  padding-top: 4em;
+}
+
+p {
+  text-align: justify;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 20px;
+  background-color: var(--bgc);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 3px solid blue;
+}

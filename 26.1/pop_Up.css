@@ -1,0 +1,51 @@
+button {
+  display: block;
+  margin: 15px auto;
+  color: beige;
+  background-color: crimson;
+  border: 0;
+  padding: 6px 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.pop_Up {
+  text-align: center;
+  font-family: Georgia, serif;
+  width: 100%;
+  max-width: 300px;
+  margin: 15% auto;
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+}
+
+.pop_Up a {
+  background-color: crimson;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 10px;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: crimson;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}

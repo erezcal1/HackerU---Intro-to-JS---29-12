@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Literals</title>
+</head>
+
+<body>
+  <script>
+    //method 1 - using constructor
+    let dog = new Object();
+    dog.type = "poodle"
+    dog.age = 8;
+    dog.name = "Buddy";
+    dog.speak = function () {
+      console.log("Woof!");
+    }
+    //method 2 - using object literal
+    let dog2 = {}
+    dog2.type = "Coli"
+    dog2.age = 3;
+    dog2.name = "Lasi";
+    dog2.speak = function () {
+      console.log("Hav Hav!");
+    }
+    //method 3 - using object literal
+    let dog3 = {
+      type: "Labrador",
+      age: 1,
+      name: "Bethoven",
+      speak: function () {
+        console.log("Ta ta ta taa!");
+      }
+    };
+  </script>
+</body>
+
+</html>
