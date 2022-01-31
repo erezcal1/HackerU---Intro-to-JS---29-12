@@ -20,6 +20,16 @@
         }
       }
     }
+
+    //second option with one arr
+    arr.sort();
+    let compar_Val;
+    for (let i = arr.length; i > 0; i--) {
+      compar_Val = arr[i];
+      if (compar_Val = arr[i - 1]) {
+        arr.splice(i, 1);
+      }
+    }
     console.log(arr);
   </script>
 </body>
