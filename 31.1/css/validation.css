@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root {
+  --success-color: #368d36;
+  --error-color: tomato;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  font-family: 'Noto Sans', ariel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  /* padding: 2rem; */
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.main_Form {
+  padding: 30px 40px;
+}
+
+.form_Control {
+  color: #666;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.form_Control input {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+.form_Control input:focus {
+  outline: 0;
+  border-color: #777
+}
+
+.form_Control.success input {
+  border-color: var(--success-color);
+}
+
+.form_Control.error input {
+  border-color: var(--error-color);
+}
+
+.form_Control small {
+  color: var(--error-color);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form_Control.error small {
+  visibility: visible;
+}
+
+input[type="submit"] {
+  background-color: rgb(68, 122, 240);
+  border-color: rgb(68, 122, 240);
+  border-radius: 4px;
+  color: bisque;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+}

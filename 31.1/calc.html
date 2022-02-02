@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calc</title>
+</head>
+
+<body>
+  <form action="">
+    <input type="number" name="" id="num1">+
+    <input type="number" name="" id="num2">=
+    <input type="number" name="" id="sum">
+    <input type="button" value="Calculate" id="calc">
+  </form>
+
+  <script>
+    document.querySelector('#calc').addEventListener('click', () => {
+      const num1 = document.querySelector('#num1');
+      const num2 = document.querySelector('#num2');
+      const sum = document.querySelector('#sum');
+      //input.value = string
+      //parseInt() -> convert string to number
+      //parseFloat() -> convert string to float
+      sum.value = parseFloat(num1.value) + parseFloat(num2.value);
+      //toString() -> convert number to string
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constructor Function</title>
+</head>
+
+<body>
+  <script>
+    function Worker(email, name) {
+      this.email = email;
+      this.name = name;
+      this.logIn = function () {
+        console.log(this.email, 'Has logged in');
+      }
+    }
+    let worker1 = new Worker("david@bigFoot.com", "David Kishot");
+    let worker2 = new Worker("shoshana@bigFoot.com", "Shoshana Aribelson");
+  </script>
+</body>
+
+</html>

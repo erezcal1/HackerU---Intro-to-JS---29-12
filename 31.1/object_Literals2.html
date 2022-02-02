@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Literals</title>
+</head>
+
+<body>
+  <script>
+    let person = {
+      first_Name: "Don",
+      last_Name: "Kishot",
+      age: 69,
+      full_name: function () {
+        return `${this.first_Name} ${this.last_Name}`;
+      }
+    };
+    let person2 = {
+      first_Name: "Erez",
+      last_Name: "Calderon",
+      age: 23,
+      full_name: function () {
+        return `${this.first_Name} ${this.last_Name}`;
+      }
+    };
+    let person3 = {
+      first_Name: "Neev",
+      last_Name: "Bitton",
+      age: 22,
+      full_name: function () {
+        return `${this.first_Name} ${this.last_Name}`;
+      }
+    };
+  </script>
+</body>
+
+</html>

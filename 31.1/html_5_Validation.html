@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 5 Validation</title>
+  <style>
+    ::placeholder {
+      color: magenta;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="">
+    <label for="">Name:</label>
+    <input type="text" required>
+    <br>
+    <label for="">Color:</label>
+    <input type="color" value="#ffcc00">
+    <br>
+    <label for="">Date</label>
+    <input type="date" value="2017-01-01">
+    <br>
+    <label for="">Email:</label>
+    <input type="email" placeholder="user@domain" required>
+    <br>
+    <label for="">Number:</label>
+    <input type="number" min="1" max="1000" step="50">
+    <br>
+    <label for="">phone:</label>
+    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    <br>
+    <label for="">Zip Code:</label>
+    <input type="text" pattern="[0-9]{5}">
+    <br>
+    <input type="submit" value="Send">
+  </form>
+</body>
+
+</html>

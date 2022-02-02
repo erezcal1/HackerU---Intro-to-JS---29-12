@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This Normal Function</title>
+</head>
+
+<body>
+  <script>
+    //this is always a pointer to an Object
+    //in here it is the window object
+    var the_Name = "Global Variable";
+    let go2 = function () {
+      var the_Name = "Local Variable";
+      console.log(this);
+      console.log(this.the_Name);
+    };
+    go2();
+  </script>
+</body>
+
+</html>
