@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Filter</title>
+</head>
+
+<body>
+  <script>
+    let scores = [80, 60, 50, 78, 45, 60, 100, 99, 66];
+    //a new array with passing scores - 70 = pass
+    let passing_Scores = scores.filter(function (score) {
+      return score >= 70;
+    });
+    let failing_Scores = scores.filter(score => score < 70);
+    console.log(scores, passing_Scores, failing_Scores);
+
+    const users = [{
+      name: "Michael",
+      premium: true
+    }, {
+      name: "John",
+      premium: false
+    }, {
+      name: "Sara",
+      premium: true
+    }, {
+      name: "Jane",
+      premium: false
+    }, {
+      name: "Greg",
+      premium: false
+    }];
+    //a new array with premium users
+    const premium_Users = users.filter(user => user.premium);
+    console.log(premium_Users);
+    //a new array with non premium users
+    const non_Premium_Users = users.filter(user => !user.premium);
+    console.log(non_Premium_Users);
+  </script>
+</body>
+
+</html>

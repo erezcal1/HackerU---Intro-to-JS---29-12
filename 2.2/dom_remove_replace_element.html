@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Remove Replace Elements</title>
+  <style>
+    #heading {
+      color: hotpink;
+      font-size: 2rem;
+      font-family: georgia;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="card">
+    <h2>Who is Alice?</h2>
+    <ul>
+      <li>Your Sister</li>
+      <li>Your Friend</li>
+      <li>Your Mother</li>
+      <li>Your Father</li>
+    </ul>
+  </div>
+
+  <script>
+    //Replace Element
+    const new_Heading = document.createElement('h2');
+    new_Heading.id = 'heading';
+    new_Heading.innerText = 'Family Members:';
+    //old Heading
+    const old_Heading = document.querySelector('#card>h2');
+    //Parent
+    const card = document.getElementById('card');
+    //Replace
+    card.replaceChild(new_Heading, old_Heading);
+    //------------------------------------------------------
+    //Remove Element
+    const li = document.querySelectorAll('li');
+    const list = document.querySelector('ul');
+    //Remove
+    li[1].remove();
+    list.removeChild(li[0]);
+  </script>
+</body>
+
+</html>

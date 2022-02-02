@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Add Book</h1>
+    <form id="book_Form">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" class="u-full-width" />
+      </div>
+      <div>
+        <label for="author">Author</label>
+        <input type="text" id="author" class="u-full-width">
+      </div>
+      <div>
+        <label for="isbn">#ISBN:</label>
+        <input type="text" id="isbn" class="u-full-width">
+      </div>
+      <div>
+        <input type="submit" value="Add Book" class="u-full-width button-primary">
+      </div>
+    </form>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>#ISBN</th>
+        </tr>
+      </thead>
+      <tbody id="book_List">
+      </tbody>
+    </table>
+  </div>
+  <script src="./js/Add_book.js"></script>
+</body>
+
+</html>

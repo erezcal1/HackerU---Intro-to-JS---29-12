@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I I F E Exl</title>
+</head>
+
+<body>
+  <script>
+    //immediately invoked all 3 functions 
+    let add, multiply;
+    //create a function that adds 2 numbers and assign it to a variable
+    add = function (a, b) {
+      return a + b;
+    }(2, 2);
+    //create a function that multiplies the previous number by it self and assign to a second variable
+    multiply = function (a) {
+      return a * a;
+    }(add);
+    //create a function that print the result of function 2 to the console
+    (function () {
+      console.log(multiply);
+    })();
+  </script>
+</body>
+
+</html>
