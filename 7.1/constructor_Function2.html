@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constructor Function</title>
+</head>
+
+<body>
+  <script>
+    // function User(email, name) {
+    //   this.email = email;
+    //   this.name = name;
+    //   this.online = false;
+    //   this.login = function () {
+    //     console.log(`${this.name} has logged in`);
+    //   };
+    // }
+    // let user1 = new User('Moti@bigfoot.com', 'Moti');
+    // let user2 = new User('eli@bigfoot.com', 'Eli');
+
+    function Car() {};
+    let toyota = new Car();
+
+    Car.prototype.status = 'New';
+    Car.prototype.wheels = 4;
+    Car.prototype.avail = function () {
+      console.log('You can get the can next month');
+    };
+  </script>
+  <script src="constructor.js"></script>
+</body>
+
+</html>

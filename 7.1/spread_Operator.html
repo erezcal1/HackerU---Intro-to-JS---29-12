@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread Operator</title>
+</head>
+
+<body>
+  <script>
+    let temp = [17, 14, 13, 16, 13, 8, 18, 30];
+    Math.min(temp);
+
+    // console.log(Math.min(17, 14, 13, 16, 13, 8, 18, 30));
+    //Using Spread Operator
+    Math.min(...temp);
+
+    let numbers = [10, 20, 30, 40, 50, 60];
+    let bad_Way = [333, 222, numbers[0], numbers[1], numbers[2]];
+    console.log(bad_Way);
+
+    //Using Spread Operator
+    let new_Way = [333, 222, ...numbers];
+    console.log(new_Way);
+  </script>
+</body>
+
+</html>

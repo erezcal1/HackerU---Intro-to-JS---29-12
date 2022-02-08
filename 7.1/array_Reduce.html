@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Reduce</title>
+</head>
+
+<body>
+  <!-- the reduce method can return any value based on the values of the array -->
+  <script>
+    //sum the numbers in the array
+    let arr = [1, 2, 3, 4, 5, 6];
+    arr.reduce(function (acc, val) {
+      //acc = 0
+      //val = arr value
+      return acc + val;
+    }, 0)
+
+    const scores = [80, 100, 56, 70, 55, 90, 88, 60];
+    //How many scores are greater than 70
+    const result = scores.reduce((count, curr) => {
+      if (curr > 70) {
+        count++;
+      }
+      return count;
+    }, 0);
+    console.log(result);
+  </script>
+</body>
+
+</html>

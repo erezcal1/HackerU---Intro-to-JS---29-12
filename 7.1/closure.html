@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closure</title>
+  <style>
+    button {
+      width: 150px;
+      height: 150px;
+      background-color: crimson;
+      color: #fff;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 2em;
+      margin: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="btn">Click</button>
+  <button id="btn2">Click</button>
+  <div class="container"></div>
+  <script>
+    (function () {
+      let counter = 0,
+        btn = document.getElementById('btn'),
+        btn2 = document.getElementById('btn2');
+
+      // let print = () => document.body.innerHTML += counter;
+      // let print = () => document.querySelector('.container').innerHTML += counter;
+      let print = () => console.log(counter);
+
+      btn.addEventListener('click', () => {
+        counter++;
+        print();
+      });
+      btn2.addEventListener('click', () => {
+        counter++;
+        print();
+      });
+    })();
+
+    (function () {
+      let a = 100;
+    })();
+    //a is not defined
+    console.log(a);
+  </script>
+
+</body>
+
+</html>

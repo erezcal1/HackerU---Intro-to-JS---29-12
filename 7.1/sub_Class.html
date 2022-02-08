@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sub class</title>
+</head>
+
+<body>
+  <script>
+    class Person {
+      constructor(first_name, last_Name, age) {
+        this.first_name = first_name;
+        this.last_Name = last_Name;
+        this.age = age;
+      }
+      greet() {
+        return `Hello ${this.first_name} ${this.last_Name}`;
+      }
+      gets_Married(new_last_Name) {
+        this.last_Name = new_last_Name;
+      }
+    }
+    class Customer extends Person {
+      constructor(first_name, last_Name, phone, membership) {
+        super(first_name, last_Name);
+        this.phone = phone;
+        this.membership = membership;
+      }
+    }
+    let avi = new Customer('Avi', 'Levi', '052-123123', 'Premium');
+
+    let moshe = new Person('Moshe', 'Cohen', 46);
+    let natalia = new Person('Natalia', 'Voitenko', 33);
+  </script>
+</body>
+
+</html>

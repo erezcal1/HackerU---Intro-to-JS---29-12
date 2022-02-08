@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immutable</title>
+</head>
+
+<body>
+  <script>
+    let user = {
+      first_Name: 'Yuval',
+      last_Name: 'Haben',
+      age: 23,
+      type: 'Admin'
+    }
+    //writable
+    Object.defineProperties(user, {
+      "type": {
+        writable: false
+      }
+    });
+    user.last_Name = 'Habat';
+    user.type = 'User';
+
+    //seal
+    //seal -> You can't add or remove new properties from the object
+    //You can change the properties values
+    Object.seal(user);
+    user.address = 'Tel Aviv';
+
+    //freeze
+    //freeze -> You can't add, remove or change the properties in the object
+    Object.freeze(user);
+    user.first_Name = 'Yosef';
+  </script>
+</body>
+
+</html>

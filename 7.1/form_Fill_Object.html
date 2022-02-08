@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Fill Object</title>
+  <style>
+    label,
+    input {
+      color: blueviolet;
+      font-family: arial;
+      font-size: 2em;
+    }
+
+    label {
+      display: block;
+    }
+
+    input {
+      border: 1px solid #000;
+      margin-bottom: 1em;
+      width: 100%;
+    }
+
+    fieldset {
+      width: 50vw;
+      margin: 0 auto;
+    }
+
+    input[type=button] {
+      background-color: beige;
+      color: #000;
+    }
+
+    input[type=button]:active {
+      background-color: maroon;
+      color: #fc0;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>
+        <h2>Movie Array List</h2>
+      </legend>
+      <label for="title">Movie Name:</label>
+      <input type="text" id="title">
+      <br>
+      <label for="director">Movie Director:</label>
+      <input type="text" id="director">
+      <br>
+      <label for="info">More Info:</label>
+      <input type="text" id="info">
+      <br>
+      <input type="button" value="Add Movie" id="btn">
+    </fieldset>
+  </form>
+  <script>
+    const btn = document.getElementById('btn');
+    const movie = [];
+    const add_Movie = () => {
+      const title = document.getElementById('title').value;
+      const director = document.getElementById('director').value;
+      const info = document.getElementById('info').value;
+      //The trim() method removes whitespace from both sides of a string. and returns a new string, without modifying the original.
+      if (title.trim() == '' || director.trim() == '' || info.trim() == '') {
+        return;
+      }
+      const new_Movie = {
+        movie_info: {
+          title,
+          director,
+          info
+        },
+        id: Math.floor(Math.random() * 10000)
+      };
+      movie.push(new_Movie);
+      console.log(new_Movie);
+      console.table(movie);
+    };
+    btn.addEventListener('click', add_Movie);
+  </script>
+</body>
+
+</html>
